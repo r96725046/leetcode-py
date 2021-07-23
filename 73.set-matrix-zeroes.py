@@ -1,15 +1,14 @@
 #
-# @lc app=leetcode id=73 lang=python
+# @lc app=leetcode id=73 lang=python3
 #
 # [73] Set Matrix Zeroes
 #
 
 # @lc code=start
-class Solution(object):
-    def setZeroes(self, matrix):
+class Solution:
+    def setZeroes(self, matrix: List[List[int]]) -> None:
         """
-        :type matrix: List[List[int]]
-        :rtype: None Do not return anything, modify matrix in-place instead.
+        Do not return anything, modify matrix in-place instead.
         """
         fr=False
         fc=False
