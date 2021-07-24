@@ -6,6 +6,7 @@
 
 # @lc code=start
 class Solution:
+    # max(index,dic[s[i]]+1)
     def lengthOfLongestSubstring(self, s: str) -> int:
         if len(s)==0:
             return 0
