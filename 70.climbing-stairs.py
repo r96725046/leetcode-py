@@ -6,6 +6,7 @@
 
 # @lc code=start
 class Solution:
+    # (1,1)
     def climbStairs(self, n: int) -> int:
         if n<2:
             return 1
