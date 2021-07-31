@@ -14,9 +14,9 @@ class Solution:
         pivot=nums[r]
         for i in range(l,r):
             if nums[i]>pivot:
-                self.swap(nums,i,start)
+                nums[i],nums[start]=nums[start],nums[i]
                 start+=1
-        self.swap(nums,start,r)
+        nums[start],nums[r]=nums[r],nums[start]
 
         if start==k-1:
             return nums[start]
@@ -24,11 +24,6 @@ class Solution:
             return self.quickSelect(nums,k,start+1,r)
         else:
             return self.quickSelect(nums,k,l,start-1)
-
-    def swap(self,nums,l,r):
-        tmp=nums[l]
-        nums[l]=nums[r]
-        nums[r]=tmp
 
 # @lc code=end
 

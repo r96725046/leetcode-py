@@ -25,19 +25,14 @@ class Solution:
 
         for i in range(len(nums)-1,index,-1):
             if nums[i]>nums[index]:
-                self.swap(nums,index,i)
+                nums[index],nums[i]=nums[i],nums[index]
                 break
 
         l=index+1
         r=len(nums)-1
         while l<r:
-            self.swap(nums,l,r)
+            nums[l],nums[r]=nums[r],nums[l]
             l+=1
             r-=1
-
-    def swap(self,nums,l,r):
-        tmp=nums[l]
-        nums[l]=nums[r]
-        nums[r]=tmp
 # @lc code=end
 

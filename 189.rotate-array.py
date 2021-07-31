@@ -14,9 +14,7 @@ class Solution:
         nums.reverse()
         def reversePos(nums, i, j):
             while i<j:
-                tmp=nums[i]
-                nums[i]=nums[j]
-                nums[j]=tmp
+                nums[i],nums[j]=nums[j],nums[i]
                 i+=1
                 j-=1
         reversePos(nums,0,k-1)
