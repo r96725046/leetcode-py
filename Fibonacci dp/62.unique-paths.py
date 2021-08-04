@@ -16,6 +16,6 @@ class Solution:
                 else:
                     arr[i][j]=arr[i-1][j]+arr[i][j-1]
         
-        return arr[m][n]
+        return arr[-1][-1]
 # @lc code=end
 

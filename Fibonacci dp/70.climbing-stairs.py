@@ -16,7 +16,7 @@ class Solution:
         for i in range(2,len(arr)):
             arr[i]=arr[i-1]+arr[i-2]
 
-        return arr[n]
+        return arr[-1]
 
 # @lc code=end
 

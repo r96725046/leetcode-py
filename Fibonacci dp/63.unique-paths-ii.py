@@ -19,6 +19,6 @@ class Solution:
                     arr[i][j]=0
                 else:
                     arr[i][j]=arr[i-1][j]+arr[i][j-1]
-        return arr[len(grid)][len(grid[0])]
+        return arr[-1][-1]
 # @lc code=end
 
