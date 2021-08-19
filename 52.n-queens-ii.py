@@ -9,7 +9,7 @@ class Solution:
     def totalNQueens(self, n: int) -> int:
         def dfs(row):
             if row==n:
-                self.ount+=1
+                self.count+=1
                 return
             for j in range(n):
                 if j in col or row+j in d1 or row-j in d2:
